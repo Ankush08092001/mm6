@@ -102,5 +102,8 @@ const mockTestsData = [
 // Export for use in other files
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = mockTestsData;
+} else {
+    // Make it available globally for browser usage
+    window.mockTestsData = mockTestsData;
 }
 
