@@ -349,29 +349,8 @@
 
     <!-- Include JavaScript files -->
     <script src="js/mockTestsData.js"></script>
-    <script>
-        // Verify mockTestsData is loaded
-        if (typeof window.mockTestsData === 'undefined') {
-            console.error('mockTestsData failed to load!');
-            document.querySelector('.grid').innerHTML = '<div class="error-message">Failed to load test data. Please refresh the page.</div>';
-        }
-    </script>
     <script src="js/mockTestsFlow.js"></script>
-    <script>
-        // Verify DOM is ready and elements exist
-        document.addEventListener('DOMContentLoaded', function() {
-            const testCardsContainer = document.querySelector('.grid');
-            if (!testCardsContainer) {
-                console.error('Test cards container not found!');
-                return;
-            }
-            
-            // Initialize the test cards
-            if (typeof window.mockTestsData !== 'undefined') {
-                renderTestCards('written');
-            }
-        });
-    </script>
+    <script src="js/mockTestsInit.js"></script>
 </body>
 </html>
 
