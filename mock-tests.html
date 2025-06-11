@@ -349,8 +349,13 @@
 
     <!-- Include JavaScript files -->
     <script src="js/mockTestsData.js"></script>
+    <script>
+        console.log('mockTestsData loaded:', typeof mockTestsData !== 'undefined');
+    </script>
     <script src="js/mockTestsFlow.js"></script>
-    <script src="js/mockTestsInit.js"></script>
+    <script>
+        console.log('mockTestsFlow loaded');
+    </script>
 </body>
 </html>
 
